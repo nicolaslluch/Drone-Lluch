@@ -19,6 +19,7 @@ padding-right: 2rem;
 list-style-type: none;
 background-color: #204050;
 padding: 1rem;
+border-radius: 0.5rem;
 }
     
 a{font-family: 'Bebas Neue', cursive; 
@@ -28,6 +29,7 @@ text-decoration: none;
 margin: 1rem
 }
 
+a:hover{font-size: 2rem;}
 
 .header__logo{width:10rem;
 height: 10rem 
@@ -64,6 +66,19 @@ text-align:center;
 width: 90%;
 padding: 1rem 0rem;
 }
+
+.foto__index{
+      text-align:center;
+      width: 85%;
+      padding: 1rem 0rem;
+      }
+
+.foto__index:hover {width:90%;
+padding: 0.5rem 0;
+transition: 1s;
+border-radius: 1rem;}
+
+
 
 .div3__index{display: flex;
 justify-content: center;
@@ -336,6 +351,9 @@ justify-content: start;
 padding-left: 1rem;
 padding-bottom: 1rem
 }
+
+
+  /* Animaciones */ 
 
      /* Responsive INDEX*/
      
