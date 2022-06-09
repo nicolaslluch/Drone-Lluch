@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,46 +10,82 @@
     <link rel="stylesheet" href="./CSS/estilo.css">
 </head>
 <body>
-   <header class="header">
-     <nav>
-      <a href="index.html"><img src="./ASSETS/DroneUY SIN FONDO.png" alt="" class="header__logo"></a>
-       <ul class="navbar">
-         <li><a href="index.html" >INICIO</a></li>
-         <li><a href="./VISTA/nosotros.html">NOSOTROS</a></li>
-         <li><a href="./VISTA/producciones.html">PRODUCCIONES</a></li>
-         <li><a href="./VISTA/ventas.html" >VENTAS</a></li>
-         <li><a href="./VISTA/contacto.html" >CONTACTO</a></li>
-       </ul>
-      </nav>
-    </header>
-     <main class="main__index">
-      <div class="frase__index">
-        <h1 class="h">PRODUCCIONES FOTOGRAFICAS Y VIDEO CON DRONE</h1>
-        <hr>
-        <h2 class="h2">Algunas de nuestras creaciones</h2>
-      </div>
-      <div class="div2__index">
-        <h3 class="textofoto__index">Fotografía</h3>
+<!--ENCABEZADO-->
+<header class="header">
+  <nav class="navbar navbar-expand-lg">
+   <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./ASSETS/DroneUY SIN FONDO.png" alt="" class="header__logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+           <ul class=" navbar1 navbar-nav align-items-center">
+              <li class="nav-item li">
+                <a class="nav-link a" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item li">
+                <a class="nav-link a " href="./VISTA/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item li ">
+                <a class="nav-link a" href="./VISTA/producciones.html">PRODUCCIONES</a>
+              </li>
+              <li class="nav-item li">
+                <a class="nav-link a" href="./VISTA/ventas.html">VENTAS</a>
+              <li class="nav-item li">
+                <a class="nav-link a" href="./VISTA/contacto.html">CONTACTO</a>
+              </li>
+           </ul>
+         </div>
+   </div>
+</header>
+<!-- Main -->
+<main class="main">
+  <section>
+    <h1 class="h">PRODUCCIONES FOTOGRAFICAS Y VIDEO CON DRONE</h1>
+    <h2 class="h2">Algunas de nuestras creaciones</h2>
+  </section>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+        <h3 class="h3">Fotografía</h3>
         <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, unde pariatur. Laboriosam modi quaerat impedit?</p>
       </div>
-      <div class="div3__index"> 
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
         <img class="foto__index" src="./ASSETS/WhatsApp Image 2022-05-08 at 3.27.15 PM.jpeg" alt="Foto 1" >
-      </div>  
-      <div class="div4__index">
-        <h3 class="textofoto__index">Video</h3>
+      </div>
+   </div>
+  </section>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center" >
+        <h3 class="h3">Video</h3>
         <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquam ducimus cupiditate ad natus quasi!</p>
       </div>
-      <div class="div5__index">
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
         <iframe width="714" height="401.5" src="https://www.youtube.com/embed/Ku0p5qY_IKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__inicio"></iframe>
       </div>
-    </main>
-    <hr>
-    <footer>
-      <div>
-      <p class="p__footer">Seguinos en las redes</p>
-      <a href="https://www.instagram.com/knoweachtravel/"> <img src="./ASSETS/IG-SIN FONDO.png" alt="Logo instagram" class="footer__logos"></a>
-      <a href=" https://www.youtube.com/channel/UC7cshOx0PM8NoeUaKbtv7vA"> <img src="./ASSETS/Youtube-SIN FONDO.png" alt="Logo youtube" class="footer__logos"></a>
     </div>
-    </footer>
- </body>
+  </section>
+</main>
+<!--FOOTER-->
+<footer>
+   <section class="mb-1 footer">
+      <div>
+        <p class="p__footer m-0">Seguinos en las redes</p>
+      </div>
+<!-- Instagram -->
+      <div class="pb-2">
+        <a href="https://www.instagram.com/knoweachtravel/"> <img src="./ASSETS/IG-SIN FONDO.png" alt="Logo instagram" class="footer__logos"></a>
+<!-- Youtube -->
+        <a href=" https://www.youtube.com/channel/UC7cshOx0PM8NoeUaKbtv7vA"> <img src="./ASSETS/Youtube-SIN FONDO.png" alt="Logo youtube" class="footer__logos"></a>
+        </div>
+<!-- Copyright -->
+        <div class="text-center text-dark p-0" style="background-color: rgba(0, 0, 0, 0.2);">
+          <p class="p__footer m-0">© 2022 Copyright DRONEUY</p>  
+        </div>
+    </section>
+</footer>
+<!-- <footer> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
 </html>
