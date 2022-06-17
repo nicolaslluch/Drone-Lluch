@@ -1,0 +1,50 @@
+   
+    .main{
+        background-color: $colorazul;
+       
+        .h{padding: 1rem;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3rem;
+        color: white; 
+        text-align: center;
+        }
+        
+        .h2{
+            padding: 1rem;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.2rem;
+            color: white;
+            text-align: center
+            }
+          
+        .h3{
+            padding: 1rem;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.5rem;
+            color: white;
+            text-align: center 
+            }
+    
+        .p{
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+            }
+
+        .foto__index{
+            text-align:center;
+            width: 85%;
+            padding: 1rem 0rem;
+            
+            &:hover {width:90%;
+            padding: 0.5rem 0;
+            transition: 1s;
+            border-radius: 1rem;
+            }
+            }
+                   
+        .video__inicio{
+            padding: 1rem;
+            width: 90%;
+            }
+    }
