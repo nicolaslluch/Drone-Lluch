@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/*reset*/
+
 *{margin: 0; 
 padding: 0;
 box-sizing: border-box}
+
+/*resetfin*/
+
+/*header*/ 
 
 .header{
 background-color: #289dd2;
@@ -34,9 +40,11 @@ color: white;}
 height: 10rem 
 }
 
-/* grid main index */
+/*headerfin*/
 
-.textofoto__index{color: white;
+/*main index */
+
+/*.textofoto__index{color: white;
 font-family: 'Bebas Neue', cursive;
 font-size: 3rem
 }
@@ -93,7 +101,7 @@ text-align: center
 .video__inicio{
 width: 85%;
 padding-bottom: 1rem;
-}
+}*/
 
        /* footer*/
      
@@ -116,7 +124,7 @@ height: 3rem
 }
      
 /* grid main nosotros*/
-
+/*
 .main_nosotros{background-color: #204050;}
 
 .textofoto__nosotros {color: white;
@@ -140,11 +148,11 @@ font-family: 'Bebas Neue', cursive;
 font-size: 1.2rem;
 color: white;
 text-align: center;
-}
+}*/
 
      /*grid main producciones*/
 
-.h1__prod{font-family: 'Bebas Neue', cursive;
+/*.h1__prod{font-family: 'Bebas Neue', cursive;
 padding: 1rem;
 color: white
 }
@@ -184,7 +192,7 @@ border-radius: 1rem
 }
 
 .video__prod:hover{opacity: 1;
-}
+}*/
 
  /* main grid ventas*/
 

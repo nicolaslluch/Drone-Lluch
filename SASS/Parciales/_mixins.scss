@@ -1,0 +1,23 @@
+@mixin h {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white; 
+    text-align: center;
+}
+
+@mixin h2 {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.2rem;
+    color: white;
+    text-align: center;
+}
+
+@mixin h3 {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center 
+}

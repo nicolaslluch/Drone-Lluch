@@ -9,7 +9,7 @@
   .header__logo {
     width: 10rem;
     height: 10rem; }
-  .header .navbar1 {
+  .header__navbar1 {
     list-style-type: none;
     background-color: #204050;
     padding: 0.5rem 1rem;
@@ -18,16 +18,16 @@
     color: white;
     font-size: 1.5rem;
     text-decoration: none; }
-    .header .navbar1 .li {
+    .header__navbar1--li {
       margin: 0 1rem; }
-  .header .a {
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none; }
-    .header .a:hover {
-      font-size: 2rem;
-      color: white; }
+      .header__navbar1--li--a {
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none; }
+        .header__navbar1--li--a:hover {
+          font-size: 2rem;
+          color: white; }
 
 .footer {
   background-color: #289dd2;
@@ -44,39 +44,149 @@
     width: 3rem;
     height: 3rem; }
 
-.main {
+.inicio {
   background-color: #204050; }
-  .main .h {
+  .inicio__h {
     padding: 1rem;
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
     color: white;
     text-align: center; }
-  .main .h2 {
+  .inicio__h2 {
     padding: 1rem;
     font-family: 'Bebas Neue', cursive;
     font-size: 2.2rem;
     color: white;
     text-align: center; }
-  .main .h3 {
+  .inicio__h3 {
     padding: 1rem;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
     color: white;
     text-align: center; }
-  .main .p {
+  .inicio__p, .nosotros__p, .ventas__p {
+    font-size: 1.3rem;
     color: white;
     font-family: 'Bebas Neue', cursive;
     text-align: center; }
-  .main .foto__index {
-    text-align: center;
+  .inicio__foto {
     width: 85%;
-    padding: 1rem 0rem; }
-    .main .foto__index:hover {
-      width: 90%;
-      padding: 0.5rem 0;
+    padding: 1rem 0rem;
+    opacity: 0.8; }
+    .inicio__foto:hover {
+      width: 85.1%;
+      padding: 1rem 0;
       transition: 1s;
-      border-radius: 1rem; }
-  .main .video__inicio {
+      border-radius: 1rem;
+      opacity: 1; }
+  .inicio__video {
     padding: 1rem;
     width: 90%; }
+
+.nosotros {
+  background-color: #204050; }
+  .nosotros__h {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white;
+    text-align: center; }
+  .nosotros__p {
+    padding: 1.3rem; }
+  .nosotros__h2 {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.2rem;
+    color: white;
+    text-align: center; }
+  .nosotros__h3 {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center; }
+  .nosotros__foto {
+    width: 85%;
+    padding: 1rem; }
+
+.prod {
+  background-color: #204050; }
+  .prod__h1 {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white;
+    text-align: center; }
+  .prod__h2 {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.2rem;
+    color: white;
+    text-align: center; }
+  .prod__foto {
+    width: 80%;
+    opacity: 0.7;
+    border-radius: 1rem; }
+    .prod__foto:hover {
+      opacity: 1; }
+  .prod__video {
+    width: 50%;
+    opacity: 0.8;
+    padding-bottom: 2rem; }
+    .prod__video:hover {
+      opacity: 1; }
+
+.ventas {
+  background-color: #204050; }
+  .ventas__h {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white;
+    text-align: center; }
+  .ventas__p {
+    padding: 1rem; }
+  .ventas__h2 {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.2rem;
+    color: white;
+    text-align: center; }
+  .ventas__h3 {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center; }
+  .ventas__foto {
+    width: 86.5%; }
+  .ventas__video {
+    width: 80%; }
+
+.contacto {
+  background-color: #204050; }
+  .contacto__form {
+    background-color: #64b8e0;
+    border-radius: 1rem; }
+  .contacto__h {
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white;
+    text-align: center; }
+  .contacto__letras {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 1.2rem;
+    padding-right: 1rem; }
+  .contacto__divreset {
+    padding-left: 1rem;
+    padding-bottom: 1rem; }
+  .contacto__boton {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1 rem;
+    width: 5rem;
+    border-style: hidden;
+    opacity: 1; }
+    .contacto__boton:hover {
+      opacity: 0.8; }

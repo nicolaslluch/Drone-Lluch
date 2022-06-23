@@ -1,0 +1,24 @@
+.ventas{
+        background-color: map-get($colores , "colorazul");
+
+        &__h{@include h
+        }
+    
+        &__p{
+        @extend .inicio__p;
+        padding: 1rem;
+        }
+    
+        &__h2{
+             @include h2
+        }
+          
+        &__h3{
+             @include h3}
+
+        &__foto{width: 86.5%;
+        }
+
+        &__video{
+        width: 80%;}
+}

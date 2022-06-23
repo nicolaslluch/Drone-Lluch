@@ -1,49 +1,39 @@
    
-    .main{
-        background-color: $colorazul;
+    .inicio{
+        background-color: map-get($colores , "colorazul");
        
-        .h{padding: 1rem;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 3rem;
-        color: white; 
-        text-align: center;
+       &__h{@include h
         }
         
-        .h2{
-            padding: 1rem;
-            font-family: 'Bebas Neue', cursive;
-            font-size: 2.2rem;
-            color: white;
-            text-align: center
+        &__h2{
+            @include h2
             }
           
-        .h3{
-            padding: 1rem;
-            font-family: 'Bebas Neue', cursive;
-            font-size: 1.5rem;
-            color: white;
-            text-align: center 
+        &__h3{
+            @include h3
             }
     
-        .p{
+        &__p{font-size: 1.3rem;
             color: white;
             font-family: 'Bebas Neue', cursive;
             text-align: center;
             }
 
-        .foto__index{
-            text-align:center;
+        &__foto{
             width: 85%;
             padding: 1rem 0rem;
+            opacity: 0.8;
             
-            &:hover {width:90%;
-            padding: 0.5rem 0;
-            transition: 1s;
-            border-radius: 1rem;
+            &:hover {
+                width: 85.1%;
+                padding: 1rem 0;
+                transition: 1s;
+                border-radius: 1rem;
+                opacity: 1;
             }
             }
                    
-        .video__inicio{
+        &__video{
             padding: 1rem;
             width: 90%;
             }

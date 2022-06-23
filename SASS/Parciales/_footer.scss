@@ -1,5 +1,5 @@
 .footer{
-    background-color: $colorceleste;
+    background-color: map-get($colores , "colorceleste");
     text-align: center;
     color: white;
     font-family: 'Bebas Neue', cursive;
