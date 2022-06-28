@@ -2,8 +2,8 @@
     background-color: map-get($colores , "colorazul");
 
     &__form{
-     background-color:map-get($colores , "colorformcontacto");
-     border-radius: 1rem;}
+        background-color:map-get($colores , "colorformcontacto");
+        border-radius: 1rem;}
     
     &__h{
         @include h}
@@ -16,17 +16,18 @@
     }
     
     &__divreset{
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
     }
     
     &__boton{
-          font-family: 'Bebas Neue', cursive;
-          font-size: 1 rem;
-          width: 5rem;
-          border-style: hidden;
-          opacity: 1;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1 rem;
+        width: 5rem;
+        border-style: hidden;
+        opacity: 1;
 
-    &:hover {opacity: 0.8;}
+    &:hover {
+        opacity: 0.8;}
     }
 }
