@@ -52,23 +52,35 @@
     font-size: 3rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .inicio__h {
+        font-size: 2.2rem; } }
   .inicio__h2 {
     padding: 1rem;
     font-family: 'Bebas Neue', cursive;
     font-size: 2.2rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .inicio__h2 {
+        font-size: 1.6rem; } }
   .inicio__h3 {
     padding: 1rem;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .inicio__h3 {
+        font-size: 1.3rem; } }
   .inicio__p, .nosotros__p, .ventas__p {
     font-size: 1.3rem;
     color: white;
     font-family: 'Bebas Neue', cursive;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .inicio__p, .nosotros__p, .ventas__p {
+        font-size: 1rem; } }
   .inicio__foto {
     width: 85%;
     padding: 1rem 0rem;
@@ -79,9 +91,25 @@
       transition: 1s;
       border-radius: 1rem;
       opacity: 1; }
-  .inicio__video {
-    padding: 1rem;
-    width: 90%; }
+  .inicio__iframe {
+    height: 500px; }
+    @media only screen and (max-width: 992px) {
+      .inicio__iframe {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden; } }
+    .inicio__iframe--video {
+      width: 100%;
+      height: 70%;
+      padding: 1rem; }
+      @media only screen and (max-width: 992px) {
+        .inicio__iframe--video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          padding: 1rem; } }
 
 .nosotros {
   background-color: #204050; }
@@ -91,6 +119,9 @@
     font-size: 3rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .nosotros__h {
+        font-size: 2.2rem; } }
   .nosotros__p {
     padding: 1.3rem; }
   .nosotros__h2 {
@@ -99,12 +130,18 @@
     font-size: 2.2rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .nosotros__h2 {
+        font-size: 1.6rem; } }
   .nosotros__h3 {
     padding: 1rem;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .nosotros__h3 {
+        font-size: 1.3rem; } }
   .nosotros__foto {
     width: 85%;
     padding: 1rem; }
@@ -117,12 +154,18 @@
     font-size: 3rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .prod__h1 {
+        font-size: 2.2rem; } }
   .prod__h2 {
     padding: 1rem;
     font-family: 'Bebas Neue', cursive;
     font-size: 2.2rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .prod__h2 {
+        font-size: 1.6rem; } }
   .prod__foto {
     width: 80%;
     opacity: 0.7;
@@ -130,7 +173,6 @@
     .prod__foto:hover {
       opacity: 1; }
   .prod__video {
-    width: 50%;
     opacity: 0.8;
     padding-bottom: 2rem; }
     .prod__video:hover {
@@ -144,6 +186,9 @@
     font-size: 3rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .ventas__h {
+        font-size: 2.2rem; } }
   .ventas__p {
     padding: 1rem; }
   .ventas__h2 {
@@ -152,16 +197,39 @@
     font-size: 2.2rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .ventas__h2 {
+        font-size: 1.6rem; } }
   .ventas__h3 {
     padding: 1rem;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .ventas__h3 {
+        font-size: 1.3rem; } }
   .ventas__foto {
     width: 86.5%; }
-  .ventas__video {
-    width: 80%; }
+  .ventas__iframe {
+    height: 500px; }
+    @media only screen and (max-width: 992px) {
+      .ventas__iframe {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden; } }
+    .ventas__iframe--video {
+      width: 100%;
+      height: 70%;
+      padding: 1rem; }
+      @media only screen and (max-width: 992px) {
+        .ventas__iframe--video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          padding: 1rem; } }
 
 .contacto {
   background-color: #204050; }
@@ -174,6 +242,9 @@
     font-size: 3rem;
     color: white;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .contacto__h {
+        font-size: 2.2rem; } }
   .contacto__letras {
     font-family: 'Bebas Neue', cursive;
     color: white;

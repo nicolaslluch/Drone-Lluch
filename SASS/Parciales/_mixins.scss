@@ -4,6 +4,9 @@
     font-size: 3rem;
     color: white; 
     text-align: center;
+    @media only screen and (max-width:768px){
+    font-size: 2.2rem;
+    }
 }
 
 @mixin h2 {
@@ -12,6 +15,8 @@
     font-size: 2.2rem;
     color: white;
     text-align: center;
+    @media only screen and (max-width:768px){
+        font-size: 1.6rem;}
 }
 
 @mixin h3 {
@@ -19,5 +24,8 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
     color: white;
-    text-align: center 
+    text-align: center;
+    @media only screen and (max-width:768px){
+        font-size: 1.3rem;
+}
 }
