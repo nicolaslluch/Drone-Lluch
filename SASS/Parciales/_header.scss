@@ -21,10 +21,11 @@
                 font-family: 'Bebas Neue', cursive; 
                 color: white;
                 font-size: 1.5rem;
+                opacity: 0.9;
                 text-decoration: none;
 
                 &:hover{
-                    font-size: 2rem;
+                    opacity:1;
                     color: white;}
         }
     }      
