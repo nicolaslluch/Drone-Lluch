@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contactanos para que podamos ayudarte a despegar tu emprendimiento">
     <meta name="keywords" content="Drone, Fotos, Videos, Contacto, Contactanos, Servicios">
-    <title>DRONE-UY | CONTACTO</title>
+    <title>DRONE-UY | PRESUPUESTO</title>
     <link rel="shortcut icon" href="../ASSETS/DroneUY SIN FONDO.png">
     <link rel="stylesheet" href="../CSS/destino.css">
 </head>
@@ -33,10 +33,8 @@
           </li>
           <li class="nav-item header__navbar1--li">
             <a class="nav-link header__navbar1--li--a" href="ventas.html">VENTAS</a>
-          </li>
           <li class="nav-item header__navbar1--li">
             <a class="nav-link header__navbar1--li--a" href="contacto.html">CONTACTO</a>
-          </li>
           <li class="nav-item header__navbar1--li">
             <a class="nav-link header__navbar1--li--a" href="presupuesto.html">PRESUPUESTO</a>
           </li>    
@@ -45,32 +43,61 @@
     </div>
  </header>
 <!-- Main -->
-<main class="contacto pb-4">
-    <h1 class="contacto__h">CONTACTO</h1>
+<main class="presupuesto pb-4">
+    <h1 class="presupuesto__h">PRESUPUESTO</h1>
     <form action="" method="get" enctype="text/plain">
-    <section class="container col-lg-6 p-4 contacto__form">
+    <section class="container col-lg-6 p-4 presupuesto__form">
         <div class="mb-3 ">
-            <label for="FormControlInputnombre" class="form-label contacto__letras">Nombre</label>
-            <input type="username" class="form-control" id="FormControlInputnombre" placeholder="Nombre" required>
-          </div>
+            <label for="Formfotos" class="form-label presupuesto__letras">CANTIDAD DE FOTOS</label>
+            <input type="number" class="form-control" id="Formfotos" placeholder="Fotos" required>
+        </div>
         <div class="mb-3">
-         <label for="FormControlInputmail" class="form-label contacto__letras">Email</label>
-    <input type="email" class="form-control" id="FormControlInputmail" placeholder="name@example.com" required>
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label contacto__letras">Consulta</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Haga aqui su consulta" required rows="3"></textarea>
-  </div>
-  <section class="d-flex justify-content-center p-3">
-    <div>
-    <button class="contacto__boton">ENVIAR</button>
-    </div>
-    <div class="contacto__divreset">
-    <input type="reset" value="RESET" class=" contacto__boton">
-    </div> 
-</section>
+             <label for="Formvideos" class="form-label presupuesto__letras">CANTIDAD DE VIDEOS</label>
+             <input type="number" class="form-control" id="Formvideos" placeholder="Videos" required>
+        </div>
+    <section class="d-flex justify-content-center p-3">
+     <div>
+        <button class="presupuesto__boton">CALCULAR</button>
+     </div>
+     <div class="presupuesto__divreset">
+        <input type="reset" value="RESET" class=" presupuesto__boton">
+     </div> 
     </section>
-    </form>
+    </section>
+    </form> 
+
+    <!-- Promociones --> 
+    
+    <h1 class="presupuesto__h">PROMOCIONES</h1>
+    <section class="container-fluid p-4 presupuesto__form">
+        <div class="row">
+          <div class="col-lg-3 mb-3 d-flex justify-content-center align-items-center">
+            <select class="form-select text-center presupuesto__letras" name="" id="fotos">
+              <option>FOTOS</option>
+              <option>50</option>
+              <option>100</option>
+            </select>
+          </div>
+          <div class="col-lg-3 mb-3 d-flex justify-content-center align-items-center">
+            <select class="form-select presupuesto__letras text-center" name="" id="videos">
+              <option>VIDEOS</option>
+              <option>5</option>
+              <option>10</option>
+            </select>
+          </div>
+          <div class="col-lg-3 mb-3 d-flex justify-content-center align-items-center">
+            <select class=" form-select presupuesto__letras text-center" name="" id="edicion">
+              <option >EDICION</option>
+              <option >s/edicion</option>
+              <option >c/edicion</option>
+            </select>
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center align-items-center p-3">
+              <button class="presupuesto__boton" onclick="def()">FILTRO</button>
+          </div>
+          <div class="row" id="mensaje"></div>
+      </section>
+</div>
 </main>
 <!--FOOTER-->
 <footer>
@@ -91,5 +118,6 @@
     </section>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="../JS/app.js"> </script>
 </body>
 </html>

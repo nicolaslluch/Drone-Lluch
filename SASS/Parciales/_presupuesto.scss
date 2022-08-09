@@ -1,0 +1,36 @@
+.presupuesto {
+    background-color: map-get($colores , "colorazul");
+
+    &__form{
+        background-color:map-get($colores , "colorformcontacto");
+        border-radius: 1rem;
+        width: 80%;    
+    }
+    
+    &__h{
+        @include h}
+       
+    &__letras{
+        font-family: 'Bebas Neue', cursive;
+        color: black;
+        font-size: 1.2rem;
+        padding-right: 1rem;
+        width: 100%;
+    }
+    
+    &__divreset{
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    &__boton{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1 rem;
+        width: 5rem;
+        border-style: hidden;
+        opacity: 1;
+
+    &:hover {
+        opacity: 0.8;}
+    }
+}
