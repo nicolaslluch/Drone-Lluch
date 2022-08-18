@@ -27,11 +27,22 @@ const promociones = [promo1,promo2,promo3,promo4]
 function filtrarPromocion(fotos, videos, edicion){
 
     return promociones
-    .filter(promo => fotos == promo.fotos || fotos == "fotos")
-    .filter(promo => videos == promo.videos || videos == "videos")
-    .filter(promo => edicion == promo.edicion.toLowerCase() || edicion == "edicion")
+    .filter(promo => promo.fotos == fotos || fotos == "fotos")
+    .filter(promo => promo.videos == videos || videos == "videos")
+    .filter(promo => promo.edicion == edicion.toLowerCase() || edicion == "edicion")
   }
   
+  
+  // Funcion llamada al clickear en boton filtrar
+  
+  function def(){
+    let fotos = document.getElementById("fotos").value.toLowerCase()
+    let videos = document.getElementById("videos").value.toLowerCase()
+    let edicion = document.getElementById("edicion").value.toLowerCase()
+    
+    listpromo (fotos, videos, edicion)
+  }
+ 
   // Funcion genera listado en HTML
 
   function listpromo(fotos, videos, edicion){
@@ -41,32 +52,57 @@ function filtrarPromocion(fotos, videos, edicion){
     
     listado.forEach((promo) => {
       list += Mensaje(promo)
+    console.log(list)
+    
     })
     if (list==""){
         list+=sinResultado()
     }
-    
     htmlmensaje.innerHTML = list
   }
-
-// Funcion llamada al clickear en boton filtrar
-
-function def(){
-    let fotos = document.getElementById("fotos").value.toLowerCase()
-    let videos = document.getElementById("videos").value.toLowerCase()
-    let edicion = document.getElementById("edicion").value.toLowerCase()
-
-    listpromo (fotos, videos, edicion)
-}
-
-function Mensaje (promo){
- list = ``
- list+= `<div>La ${promo.nombre} cuenta con ${promo.fotos} fotos, ${promo.videos} videos ${promo.edicion} y el costo es de $ ${promo.precio}
- </div>`
- return list
-}
-
+  
+  function Mensaje (promo){
+    list = ``
+    list+= `<div> La ${promo.nombre} cuenta con ${promo.fotos} fotos, ${promo.videos} videos ${promo.edicion} y el costo es de $ ${promo.precio}
+    </div>`
+    return list
+   
+  }
+  
 function sinResultado (){
     let nada = `<div> No hay resultados </div>`
     return nada
+}
+
+
+document.querySelector('#btnenviar').addEventListener("click", registrar)
+
+function registrar (event) {
+  event.preventDefault()
+  var aForm = []
+  sNombre = ''
+  sMail= ''
+  sCons = '' 
+
+  sNombre = document.querySelector('#FormControlInputnombre').value
+  sMail =document.querySelector('#FormControlInputmail').value
+  sCons=document.querySelector('#exampleFormControlTextarea1').value
+
+  aForm.push(sNombre,sMail,sCons)
+
+  console.log(aForm)
+  }
+
+
+function registrarCons (nForm){
+  aForm=getLista()
+  aForm.push(nForm)
+  localStorage.setItem('nuevaCons', JSON.stringify(aForm))
+}
+
+function getLista () {
+
+var nLista = JSON.parse(localStorage.getItem ('nuevaCons'))
+return nLista
+
 }
