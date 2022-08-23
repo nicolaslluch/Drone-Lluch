@@ -55,9 +55,7 @@ function filtrarPromocion(fotos, videos, edicion){
     console.log(list)
     
     })
-    if (list==""){
-        list+=sinResultado()
-    }
+    list==""? list+=sinResultado() : list==list
     htmlmensaje.innerHTML = list
   }
   
@@ -102,7 +100,7 @@ function registrarCons (nForm){
 
 function getLista () {
 
-var nLista = JSON.parse(localStorage.getItem ('nuevaCons'))
+let nLista = JSON.parse(localStorage.getItem('nuevaCons'))
 return nLista
 
 }
