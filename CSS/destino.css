@@ -300,3 +300,10 @@
     opacity: 1; }
     .presupuesto__boton:hover {
       opacity: 0.8; }
+
+.swal2-container.swal2-center > .swal2-popup {
+  background-color: #64b8e0;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-size: 1 rem;
+  border-radius: 1rem; }

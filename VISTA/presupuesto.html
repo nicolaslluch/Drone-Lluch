@@ -10,6 +10,7 @@
     <title>DRONE-UY | PRESUPUESTO</title>
     <link rel="shortcut icon" href="../ASSETS/DroneUY SIN FONDO.png">
     <link rel="stylesheet" href="../CSS/destino.css">
+    <script defer src="../package/dist/sweetalert2.all.min.js"></script>
 </head>
 <body>
 <!--ENCABEZADO-->
@@ -57,7 +58,7 @@
         </div>
     <section class="d-flex justify-content-center p-3">
      <div>
-        <button class="presupuesto__boton" onclick="calculo()">CALCULAR</button>
+        <button class="presupuesto__boton" id="calcular" onclick="calculo()" >CALCULAR</button>
      </div>
      <div class="presupuesto__divreset">
         <input type="reset" value="RESET" class=" presupuesto__boton">
@@ -93,7 +94,7 @@
             </select>
           </div>
           <div class="col-lg-3 d-flex justify-content-center align-items-center p-3">
-              <button class="presupuesto__boton" onclick="def()">FILTRO</button>
+              <button class="presupuesto__boton" onclick="def()" >FILTRO</button>
           </div>
           <div class="row" id="mensaje"></div>
       </section>

@@ -67,40 +67,15 @@ function filtrarPromocion(fotos, videos, edicion){
    
   }
   
+ 
 function sinResultado (){
-    let nada = `<div> No hay resultados </div>`
-    return nada
-}
-
-
-document.querySelector('#btnenviar').addEventListener("click", registrar)
-
-function registrar (event) {
-  event.preventDefault()
-  var aForm = []
-  sNombre = ''
-  sMail= ''
-  sCons = '' 
-
-  sNombre = document.querySelector('#FormControlInputnombre').value
-  sMail =document.querySelector('#FormControlInputmail').value
-  sCons=document.querySelector('#exampleFormControlTextarea1').value
-
-  aForm.push(sNombre,sMail,sCons)
-
-  console.log(aForm)
-  }
-
-
-function registrarCons (nForm){
-  aForm=getLista()
-  aForm.push(nForm)
-  localStorage.setItem('nuevaCons', JSON.stringify(aForm))
-}
-
-function getLista () {
-
-let nLista = JSON.parse(localStorage.getItem('nuevaCons'))
-return nLista
-
+  let nada = `<div> No hay resultados </div>`
+  Swal.fire({
+    position: 'center',
+    icon: 'error',
+    title: 'No se encontraron resultados',
+    showConfirmButton: false,
+    timer: 1500
+  })
+  return nada
 }
