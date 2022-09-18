@@ -79,3 +79,30 @@ function sinResultado (){
   })
   return nada
 }
+
+// funcion para calcular precio sin promociones
+function costo(A, B, C, D)  {
+  res=A*B + C*D
+  return res
+  
+}
+
+const calcular = document.getElementById("calcular")
+
+calcular.addEventListener("click", calculo)
+
+/* const precio = costo(cantidadFotos,precioFoto,cantidadVideos,precioVideo)
+console.log (precio) */
+
+
+function calculo(event){
+event.preventDefault()
+let cantidadFotos = document.getElementById("Formfotos").value
+let cantidadVideos = document.getElementById("Formvideos").value
+const precioFoto=20
+const precioVideo=100
+
+const precio = costo(cantidadFotos,precioFoto,cantidadVideos,precioVideo)
+console.log(precio)
+Swal.fire(`El costo es de ${precio}`);
+}

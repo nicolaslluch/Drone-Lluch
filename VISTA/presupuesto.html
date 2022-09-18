@@ -46,26 +46,26 @@
 <!-- Main -->
 <main class="presupuesto pb-4">
     <h1 class="presupuesto__h">PRESUPUESTO</h1>
-    <form action="" method="get" enctype="text/plain">
+    <form action="" method="get" enctype="text/plain"> 
     <section class="container col-lg-6 p-4 presupuesto__form">
         <div class="mb-3 ">
             <label for="Formfotos" class="form-label presupuesto__letras">CANTIDAD DE FOTOS</label>
-            <input type="number" class="form-control" id="Formfotos" placeholder="Fotos" required>
+            <input type="number" min="0" step="1" class="form-control" id="Formfotos" placeholder="Fotos">
         </div>
         <div class="mb-3">
              <label for="Formvideos" class="form-label presupuesto__letras">CANTIDAD DE VIDEOS</label>
-             <input type="number" class="form-control" id="Formvideos" placeholder="Videos" required>
+             <input type="number" min="0" class="form-control" id="Formvideos" placeholder="Videos">
         </div>
     <section class="d-flex justify-content-center p-3">
      <div>
-        <button class="presupuesto__boton" id="calcular" onclick="calculo()" >CALCULAR</button>
+        <button class="presupuesto__boton" id="calcular">CALCULAR</button>
      </div>
      <div class="presupuesto__divreset">
         <input type="reset" value="RESET" class=" presupuesto__boton">
      </div> 
     </section>
     </section>
-    </form> 
+   </form>
 
     <!-- Promociones --> 
     
